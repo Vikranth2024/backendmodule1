@@ -1,0 +1,21 @@
+{
+  "name": "postbox-letter-tray",
+  "version": "1.0.0",
+  "description": "Postbox — a single-resource letter-tray REST API (CRUD, status codes, response envelopes).",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "npm i && node spec/run-jasmine.js"
+  },
+  "keywords": ["nodejs", "express", "rest-api", "crud", "status-codes"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jasmine": "^5.1.0",
+    "jasmine-reporters": "^2.5.2",
+    "supertest": "^6.3.4"
+  }
+}
