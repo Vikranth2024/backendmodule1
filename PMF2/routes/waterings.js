@@ -14,7 +14,8 @@
  *   Success  ->  { data: <payload> }
  *   Error    ->  { error: "<safe string>" }
  *
- * Implement the four FIX markers below.
+ * Each handler currently returns a 501 placeholder so the tests fail fast.
+ * Replace every placeholder with the real logic described in its FIX note.
  */
 
 const express = require('express');
@@ -23,7 +24,7 @@ const store = require('../repository/store');
 
 // FIX 1: GET /  -> 200 with every watering wrapped in { data }.
 router.get('/', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 2: POST /  -> record a watering. Read `plantId` and `amountMl`.
@@ -34,19 +35,19 @@ router.get('/', (req, res) => {
 //   * Otherwise assign a generated id (store.nextWateringId++), store it,
 //     and respond 201 { data: <the new watering> }.
 router.post('/', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 3: GET /:id  -> 200 { data } for the matching watering, or
 //        404 { error: 'Watering not found' } when absent.
 router.get('/:id', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 4: DELETE /:id  -> remove the watering and respond 204 with no body,
 //        or 404 { error: 'Watering not found' } when absent.
 router.delete('/:id', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 module.exports = router;

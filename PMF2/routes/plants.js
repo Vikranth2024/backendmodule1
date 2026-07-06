@@ -11,7 +11,8 @@
  *   Success  ->  { data: <payload> }
  *   Error    ->  { error: "<safe string>" }
  *
- * Implement the five FIX markers below.
+ * Each handler currently returns a 501 placeholder so the tests fail fast.
+ * Replace every placeholder with the real logic described in its FIX note.
  */
 
 const express = require('express');
@@ -20,7 +21,7 @@ const store = require('../repository/store');
 
 // FIX 1: GET /  -> 200 with every plant wrapped in { data }.
 router.get('/', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 2: POST /  -> create a plant.
@@ -29,26 +30,26 @@ router.get('/', (req, res) => {
 //   * Otherwise assign a generated id (store.nextPlantId++), store it,
 //     and respond 201 { data: <the new plant> }.
 router.post('/', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 3: GET /:id  -> 200 { data } for the matching plant, or
 //        404 { error: 'Plant not found' } when absent.
 router.get('/:id', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 4: PUT /:id  -> replace `name` and `species` on an existing plant and
 //        respond 200 { data }, or 404 { error: 'Plant not found' } when absent.
 router.put('/:id', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 5: DELETE /:id  -> remove the plant AND every watering that references it
 //        (its plantId), then respond 204 with no body. Respond
 //        404 { error: 'Plant not found' } when the plant does not exist.
 router.delete('/:id', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 module.exports = router;

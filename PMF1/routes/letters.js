@@ -12,7 +12,9 @@
  *   Success  ->  { data: <payload> }
  *   Error    ->  { error: "<safe string>" }
  *
- * Implement the six FIX markers below. Do not change __resetTray or the exports.
+ * Each handler currently returns a 501 placeholder so the tests fail fast.
+ * Replace every placeholder with the real logic described in its FIX note.
+ * Do not change __resetTray or the exports.
  */
 
 const express = require('express');
@@ -23,7 +25,7 @@ let nextId = 1;
 
 // FIX 1: GET /  -> 200 with every letter wrapped in { data }.
 router.get('/', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 2: POST /  -> create a letter.
@@ -32,31 +34,31 @@ router.get('/', (req, res) => {
 //   * Otherwise assign a generated id, start `delivered` at false, store it,
 //     and respond 201 { data: <the new letter> }.
 router.post('/', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 3: GET /:id  -> 200 { data } for the matching letter, or
 //        404 { error: 'Letter not found' } when no letter has that id.
 router.get('/:id', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 4: PUT /:id  -> replace `recipient` and `message` on an existing letter
 //        and respond 200 { data }, or 404 { error: 'Letter not found' } when absent.
 router.put('/:id', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 5: PATCH /:id/deliver  -> set `delivered` to true and respond 200 { data },
 //        or 404 { error: 'Letter not found' } when absent.
 router.patch('/:id/deliver', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // FIX 6: DELETE /:id  -> remove the letter and respond 204 with no body,
 //        or 404 { error: 'Letter not found' } when absent.
 router.delete('/:id', (req, res) => {
-  // TODO
+  res.status(501).json({ error: 'Not implemented' }); // TODO: replace
 });
 
 // Resets/seeds the tray between tests. DO NOT MODIFY.
