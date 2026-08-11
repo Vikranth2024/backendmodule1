@@ -8,7 +8,6 @@ The wiring is done — the only file you touch is `index.js`. Every function cur
 
 A product looks like: `{ id, name, category, stock }`.
 
----
 
 ## The Contract
 
@@ -16,7 +15,6 @@ A product looks like: `{ id, name, category, stock }`.
 - Error → `{ error: "<message>" }`
 - Delete → `{ deleted: true }`
 
----
 
 ## File to Edit
 
@@ -26,7 +24,6 @@ You must change **one file**:
 
 `spec/` and `index.solution.js` are complete — do **not** edit them.
 
----
 
 ## Functions to Implement
 
@@ -52,7 +49,6 @@ Error message for `createProduct` failures: `'name, category and stock are requi
 Error message for `restockProduct` bad quantity: `'quantity must be a positive number'`  
 Error message for unknown id: `'Product not found'`
 
----
 
 ## Input / Output Examples
 
@@ -75,7 +71,6 @@ Error message for unknown id: `'Product not found'`
 // deleteProduct(999) -> { error: 'Product not found' }
 ```
 
----
 
 ## Test Cases and Marks Distribution
 
@@ -92,7 +87,6 @@ Error message for unknown id: `'Product not found'`
 9. **Restock**: `restockProduct()` adds quantity to existing stock → `{ data }`.
 10. **Delete**: `deleteProduct()` removes product; follow-up `getProduct()` returns `{ error }`.
 
----
 
 ## How to Test Your Solution
 
