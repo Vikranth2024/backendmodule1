@@ -1,10 +1,4 @@
-# StockRoom: Product Inventory Service
 
-## Difficulty
-
-Medium.
-
-## Problem Statement
 
 StockRoom tracks products in a small warehouse. Each product has a name, a category, and a stock count. Someone can list all products, add a new one, look one up, update its details, restock it by adding more units, and remove it entirely.
 
