@@ -1,14 +1,9 @@
-# TaskFlow — Task Board Service
-
-## Problem Statement
-
 TaskFlow manages todo cards on a task board. Each task has a title, a priority level, and a completion flag. Someone can list all tasks, add a new one, look one up, update its details, mark it as complete, and delete it.
 
 The wiring is done — the only file you touch is `index.js`. Every function currently returns `{}`, so all tests fail from the start. Your job is to replace each placeholder with the correct logic.
 
 A task looks like: `{ id, title, priority, done }`.
 
----
 
 ## The Contract
 
@@ -16,7 +11,6 @@ A task looks like: `{ id, title, priority, done }`.
 - Error → `{ error: "<message>" }`
 - Delete → `{ deleted: true }`
 
----
 
 ## File to Edit
 
@@ -26,7 +20,6 @@ You must change **one file**:
 
 `spec/` and `index.solution.js` are complete — do **not** edit them.
 
----
 
 ## Functions to Implement
 
@@ -39,7 +32,6 @@ You must change **one file**:
 | `completeTask(id)` | Set `done = true` → `{ data }` / `{ error }` |
 | `deleteTask(id)` | Remove → `{ deleted: true }` / `{ error }` |
 
----
 
 ## Validation Rules
 
@@ -50,7 +42,6 @@ You must change **one file**:
 Error message for `createTask` failures: `'title is required and priority must be low, medium or high'`  
 Error message for unknown id: `'Task not found'`
 
----
 
 ## Input / Output Examples
 
@@ -72,7 +63,6 @@ Error message for unknown id: `'Task not found'`
 // deleteTask(999)    -> { error: 'Task not found' }
 ```
 
----
 
 ## Test Cases and Marks Distribution
 
@@ -89,7 +79,6 @@ Error message for unknown id: `'Task not found'`
 9. **Complete**: `completeTask()` flips `done` to `true` → `{ data }`.
 10. **Delete**: `deleteTask()` removes task; follow-up `getTask()` returns `{ error }`.
 
----
 
 ## How to Test Your Solution
 
