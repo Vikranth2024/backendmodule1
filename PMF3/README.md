@@ -1,7 +1,3 @@
-# StockRoom — Product Inventory Service
-
-## Problem Statement
-
 StockRoom tracks products in a small warehouse. Each product has a name, a category, and a stock count. Someone can list all products, add a new one, look one up, update its details, restock it by adding more units, and remove it entirely.
 
 The wiring is done — the only file you touch is `index.js`. Every function currently returns `{}`, so all tests fail from the start. Your job is to replace each placeholder with the correct logic.
