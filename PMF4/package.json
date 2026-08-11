@@ -1,0 +1,16 @@
+{
+  "name": "task-board-service",
+  "version": "1.0.0",
+  "description": "Task Board — a pure-function service layer (CRUD, validation, completion).",
+  "main": "service/taskboard.js",
+  "scripts": {
+    "test": "npm i && node spec/run-jasmine.js"
+  },
+  "keywords": ["nodejs", "service-layer", "crud", "in-memory"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^5.1.0",
+    "jasmine-reporters": "^2.5.2"
+  }
+}
