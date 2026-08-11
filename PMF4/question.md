@@ -1,11 +1,3 @@
-# TaskFlow: Task Board Service
-
-## Difficulty
-
-Medium.
-
-## Problem Statement
-
 TaskFlow manages todo cards on a task board. Each task has a title, a priority level, and a completion flag. Someone can list all tasks, add a new one, look one up, update its details, mark it as complete, and delete it.
 
 The wiring is done, but every function is empty. Make the service work by completing all the functions in a single file. The data lives in a plain in-memory array (no database) that is re-seeded with two tasks before every run. A task looks like `{ id, title, priority, done }`.
